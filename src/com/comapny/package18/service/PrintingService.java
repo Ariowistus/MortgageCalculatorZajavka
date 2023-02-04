@@ -10,7 +10,7 @@ public interface PrintingService {
     String MONTH = "MIESIĄC: ";
     String DATE = "DATA: ";
 
-    String MONTHS = "MIESIECY";
+    String MONTHS = " MIESIECY";
 
     String RATE = "RATA";
 
@@ -24,7 +24,7 @@ public interface PrintingService {
     String MORTAGE_PERIOD = "OKRES KREDYTOWANIA: ";
 
 
-    String CURRENCY = "Zł ";
+    String CURRENCY = " Zł ";
     String NEW_LINE = "\n";
     String PERCENT = "%";
 

@@ -1,6 +1,8 @@
 package com.comapny.package18;
 
 import com.comapny.package18.model.InputData;
+import com.comapny.package18.service.MortgageCalculationService;
+import com.comapny.package18.service.MortgageCalculationServiceImpl;
 import com.comapny.package18.service.PrintingService;
 import com.comapny.package18.service.PrintingServiceImpl;
 
@@ -17,6 +19,9 @@ public class Main {
                 .withMonthsDuration(BigDecimal.valueOf(160));
 
         PrintingService printingService = new PrintingServiceImpl();
-        printingService.printInputDataInfo(inputData);
+        MortgageCalculationService mortgageCalculationService = new MortgageCalculationServiceImpl(printingService);
+        mortgageCalculationService.calculate(inputData);
+
+
     }
 }
